@@ -94,7 +94,7 @@
 		<dependency>
 			<groupId>net.sf.ehcache</groupId>
 			<artifactId>ehcache</artifactId>
-			<version>1.6.0</version>
+			<version>1.8.0</version>
 		</dependency>
 		<dependency>
 			<groupId>quartz</groupId>
@@ -154,10 +154,10 @@
 						<configuration>
 							<target>
 								<!-- appel de Ant et copie du résultat dans le site -->
-								<ant antfile="build.xml" target="zip" />
-								<copy file="javamelody-swing.zip" tofile="target/site/javamelody-swing.zip" />
-								<copy file="javamelody-swing.jar" tofile="target/site/javamelody-swing.jar" />
-								<ant antfile="build.xml" target="clean" />
+								<ant antfile="build.xml" target="zip"/>
+								<copy file="javamelody-swing.zip" tofile="target/site/javamelody-swing.zip"/>
+								<copy file="javamelody-swing.jar" tofile="target/site/javamelody-swing.jar"/>
+								<ant antfile="build.xml" target="clean"/>
 							</target>
 						</configuration>
 						<goals>
