@@ -48,7 +48,7 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.16</version>
+			<version>1.2.17</version>
 		</dependency>
 		<!-- Dépendance iText pour exports PDF -->
 		<dependency>
@@ -154,10 +154,10 @@
 						<configuration>
 							<target>
 								<!-- appel de Ant et copie du résultat dans le site -->
-								<ant antfile="build.xml" target="zip" />
-								<copy file="javamelody-swing.zip" tofile="target/site/javamelody-swing.zip" />
-								<copy file="javamelody-swing.jar" tofile="target/site/javamelody-swing.jar" />
-								<ant antfile="build.xml" target="clean" />
+								<ant antfile="build.xml" target="zip"/>
+								<copy file="javamelody-swing.zip" tofile="target/site/javamelody-swing.zip"/>
+								<copy file="javamelody-swing.jar" tofile="target/site/javamelody-swing.jar"/>
+								<ant antfile="build.xml" target="clean"/>
 							</target>
 						</configuration>
 						<goals>
