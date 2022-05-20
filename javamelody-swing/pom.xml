@@ -106,7 +106,7 @@
 		<dependency>
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
-			<version>1.4.2</version>
+			<version>1.4.19</version>
 		</dependency>
 	</dependencies>
 
@@ -154,10 +154,10 @@
 						<configuration>
 							<target>
 								<!-- appel de Ant et copie du résultat dans le site -->
-								<ant antfile="build.xml" target="zip" />
-								<copy file="javamelody-swing.zip" tofile="target/site/javamelody-swing.zip" />
-								<copy file="javamelody-swing.jar" tofile="target/site/javamelody-swing.jar" />
-								<ant antfile="build.xml" target="clean" />
+								<ant antfile="build.xml" target="zip"/>
+								<copy file="javamelody-swing.zip" tofile="target/site/javamelody-swing.zip"/>
+								<copy file="javamelody-swing.jar" tofile="target/site/javamelody-swing.jar"/>
+								<ant antfile="build.xml" target="clean"/>
 							</target>
 						</configuration>
 						<goals>
