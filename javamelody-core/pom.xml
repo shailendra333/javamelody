@@ -100,7 +100,7 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>0.9.19</version>
+			<version>1.4.12</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -341,12 +341,12 @@
 						<configuration>
 							<target>
 								<!-- écrit la version du pom dans VERSION.properties -->
-								<echo message="# Version of JavaMelody${line.separator}" file="VERSION.properties" />
-								<echo message="version=${project.version}" append="true" file="VERSION.properties" />
+								<echo message="# Version of JavaMelody${line.separator}" file="VERSION.properties"/>
+								<echo message="version=${project.version}" append="true" file="VERSION.properties"/>
 								<!-- avec antrun 1.7, CR ne peut être écrit en même temps que LF -->
-								<echo message="&#xD;" append="true" file="VERSION.properties" />
-								<echo message="&#xA;" append="true" file="VERSION.properties" />
-								<copy file="VERSION.properties" tofile="target/classes/VERSION.properties" />
+								<echo message="&#13;" append="true" file="VERSION.properties"/>
+								<echo message="&#10;" append="true" file="VERSION.properties"/>
+								<copy file="VERSION.properties" tofile="target/classes/VERSION.properties"/>
 
 								<!-- appel de Ant et copie du résultat dans le site -->
 								<!-- On n'appelle plus Ant pour mettre les artefacts dans le site
